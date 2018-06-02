@@ -1,0 +1,27 @@
+<% include header %>
+
+  <div class="card" style="margin-top:1rem;">
+    <div class="card-body">
+        <h1 style="text-align:center; margin-bottom:1rem;">Agregar nueva victima</h1>
+        <form method="post" role="form">
+            <div class="input-group input-group-lg" style="margin-bottom:1rem;">
+                <span class="input-group-addon" id="sizing-addon1">Nombre &nbsp;</span>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre de la victima" aria-label="Username" aria-describedby="sizing-addon1">
+            </div>
+            <div class="input-group input-group-lg" style="margin-bottom:1rem;">
+                <span class="input-group-addon" id="sizing-addon1">Dirección</span>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" aria-label="Username" aria-describedby="sizing-addon1">
+            </div>
+            <div class="input-group input-group-lg" style="margin-bottom:1rem;">
+                <span class="input-group-addon" id="sizing-addon1">Teléfono &nbsp;</span>
+                <input type="text" class="form-control" id="tel" name="tel" placeholder="Teléfono" aria-label="Username" aria-describedby="sizing-addon1">
+            </div>
+            <div class="input-group input-group-lg" style="margin-bottom:1rem;">
+                <span class="input-group-addon" id="sizing-addon1">Instagram</span>
+                <input type="text" class="form-control" id="instagram" name="instagram" placeholder="Instagram" aria-label="Username" aria-describedby="sizing-addon1">
+            </div>
+            <button type="submit" class="btn btn-primary" value="aceptar">Aceptar</button>
+          </form>
+    </div>
+  </div>
+<% include footer %>

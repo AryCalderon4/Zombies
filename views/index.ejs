@@ -1,0 +1,32 @@
+<% include header %>
+
+<% if(entries.length){ %>
+    <h1 style="margin-top:3rem; text-align:center;">Lista de victimas</h1>
+    <% if(entries.length==1){ %>
+    <h4>Hay <%- entries.length %> victima registrada</h4>
+    <% }else if(entries.length>1){ %>
+        <h4>Hay <%- entries.length %> victimas registradas</h4>
+        <% } %>
+    <% entries.forEach((entry)=>{ %>
+        <div class="card" style="margin-top:1rem;">
+                <div class="card-body">
+                  <label for="nombre" class="font-weight-bold">Nombre: </label>
+                  <%- entry.nombre %>
+                  <br>
+                  <label for="nombre" class="font-weight-bold">Dirección: </label>
+                  <%- entry.direccion %>
+                  <br>
+                  <label for="nombre" class="font-weight-bold">Teléfono: </label>
+                  <%- entry.tel %>
+                  <br>
+                  <label for="nombre" class="font-weight-bold">Instagram: </label>
+                  <%- entry.instagram %>
+                  
+                </div>
+            </div>
+    <% }) %>
+<% }else{ %>
+    <h1 style="margin-top:3rem; text-align:center;">Aun no hay ninguna victima registrada</h1>
+<% } %>
+
+<% include footer %>
